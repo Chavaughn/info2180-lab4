@@ -1,0 +1,103 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    margin: 0 4em 0 4em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+div.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    background-color: rgb(228, 227, 227)
+}
+
+div.container main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 4fr .5em 1fr;
+    grid-template-columns: 4fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: .5em;
+    width: 30rem;
+    margin: 0 0 2em 0;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+
+form label {
+    grid-column: 1 /span 2;
+}
+
+form button#Searchbtn {
+    background: red;
+    color: white;
+    padding: 0.5em;
+    border: none;
+}
+
+form button#Searchbtn:hover {
+    color: rgb(0, 0, 0);
+    background: orangered;
+}
+
+form input {
+    border: solid grey .1em;
+    border-radius: 0.5em;
+    padding-left: 0.5em;
+}
+
+div#result {
+    padding: 2em 2em 2em 2em;
+    width: 30em;
+}
+
+div#result hr {
+    margin: 0 -20em 2em 0;
+    height: .1em;
+    background: #999;
+}
+
+div#result span {
+    color: red;
+    ;
+}
+
+div#result p {
+    margin: 1.5em 0 0 0;
+}
+
+div#result h3 {
+    color: #000;
+}
+
+header {
+    color: white;
+    background: rgb(68, 172, 236);
+    text-align: center;
+    padding: 2em;
+    margin: 0 0 2em 0;
+}

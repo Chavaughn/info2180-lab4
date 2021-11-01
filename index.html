@@ -13,13 +13,18 @@
 <body>
     <div class="container">
         <header>
-            <h1>Search for your Super-Heros I guess</h1>
+            <h1>Search for your Super-Heroes I guess</h1>
         </header>
-        <button id="Searchbtn" type="button">Search</button>
         <main>
-
+            <form onsubmit="return false">
+                <label><b>Your Super-Hero<br></b></label>
+                <input id="searchfld" name="search" type="text" placeholder="Ex. Tony Stark || Ironman" />
+                <button id="Searchbtn" type="submit">Search</button>
+            </form>
         </main>
+        <div id="result">
 
+        </div>
     </div>
 </body>
 
